@@ -17,6 +17,17 @@ module.exports = {
       test: /\.js$/,
       loader: 'eslint-loader',
       exclude: /node_modules/
+    }],
+    loaders: [{
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: 'babel',
+      query: {
+        presets: ['es2015']
+      }
+    }, {
+      test: /\.css$/,
+      loader: 'style!css?sourceMap'
     }]
   }
 };

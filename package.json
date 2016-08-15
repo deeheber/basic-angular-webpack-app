@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/deeheber/basic-angular-webpack-app#readme",
   "devDependencies": {
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
     "css-loader": "^0.23.1",
     "eslint": "^3.3.0",
     "eslint-loader": "^1.5.0",
