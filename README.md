@@ -2,7 +2,7 @@
 
 This is my first application using webpack and angular.
 
-## Dirctions to run locally
+## Directions to run locally
 
 1. `npm install`to install components
 2. `npm start` to start the server
