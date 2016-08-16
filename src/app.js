@@ -1,20 +1,20 @@
 import './main.css';
 import angular from 'angular';
-//import getCow from './cow';
 import cowsay from 'cowsay-browser';
+import getTest from './test';
 
 const app = angular.module('myApp', []);
 
 app.controller('main', function($scope){
-  $scope.name = 'world';
-  $scope.cow = function(){
+  $scope.name = 'your name here';
+  $scope.phrase = 'Mooooooo';
+  $scope.cow = function(phrase){
     return cowsay.think({
-      text: 'Cows are cool',
+      text: phrase,
       e: 'oO',
       T: 'U'
     });
   };
-
 });
 
-//console.log(getCow());
+console.log(getTest());
