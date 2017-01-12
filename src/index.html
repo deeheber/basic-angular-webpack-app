@@ -10,5 +10,12 @@
     <hr />
     <div>The cow says: <input ng-model="phrase"></div>
     <pre>{{cow(phrase)}}</pre>
+
+    <div><label>Female: <input ng-model="Female" type="checkbox"></label></div>
+    <div><label>Male: <input ng-model="Male" type="checkbox"></label></div>
+    <div>
+      <h1>Results</h1>
+      <p ng-repeat="dog in dogs | filter:genderFilter({Female, Male})">{{dog.name}} is {{dog.color}}</p>
+    </div>
   </body>
 </html>
